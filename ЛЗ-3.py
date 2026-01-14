@@ -155,7 +155,7 @@ def heap_sort(nums):
     n = len(nums)
     logger.info(f"Шаг 1: Построение max-кучи из {n} элементов")
 
-    for i in range(n, -1, -1):
+    for i in range(n // 2 - 1, -1, -1):
         logger.info(f" Вызываем heapify для корня {i}")
         heapify(nums, n, i)
 
